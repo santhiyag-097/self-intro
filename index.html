@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 190px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .details p {
+            margin: 8px 0;
+            font-size: 17px;
+        }
+
+        .details span {
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #2c3e50;
+            border-left: 6px solid #667eea;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #667eea;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f2f5ff;
+        }
+        .media-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .media-card {
+            background-color: #f4f6ff;
+            padding: 15px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .media-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .media-card h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        video {
+            width: 70%;
+            border-radius: 50px;
+            outline: none;
+        }
+
+        .resume-btn {
+            display: block;
+            width: fit-content;
+            margin: 80px auto 70px;
+            padding: 14px 35px;
+            background: linear-gradient(135deg, #3f5cde, #764ba2);
+            color: rgb(199, 34, 34);
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 30px;
+            font-weight: 500;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Profile</h1>
+
+    <div class="profile">
+        <img src="sg.jpg.jpeg" alt="Profile Photo">
+
+        <div class="details">
+            <p><span>Name:</span> SANTHIYA G </p>
+            <p><span>Department:</span> Electronics and Communication Engineering</p>
+            <p><span>Section:</span> A</p>
+        </div>
+    </div>
+
+    <h2>Semester Results</h2>
+
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th>CGPA</th>
+        </tr>
+        <tr><td>Semester 1</td><td>8.32</td></tr>
+        <tr><td>Semester 2</td><td>8.35</td></tr>
+        <tr><td>Semester 3</td><td>9.08</td></tr>
+        <tr><td>Semester 4</td><td>8.84</td></tr>
+        <tr><td>Semester 5</td><td>—</td></tr>
+    </table>
+
+    <h2>Video</h2>
+
+    <div class="media-section">
+        <div class="media-card">
+            <h3>🎥 Self Introduction</h3>
+            <video controls>
+                <source src="introvideo.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+
+    </div>
+
+    <a href="resume-097.pdf" class="Santhiya G-711523BEC097-btn" target="_blank">📄 View Resume</a>
+
+</div>
+</body>
+</html>
